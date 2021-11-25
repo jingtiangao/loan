@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Research</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/sitelogo.png" alt="" /></span><span class="title">Home</span>
+								</a>
+
+							<!-- Nav -->
+							
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+							
+						</div>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="https://jingtiangao.github.io/">Home</a></li>
+							<li><a href="https://jingtiangao.github.io/">Bio</a></li>
+							<li><a href="https://jingtiangao.github.io/">Publications</a></li>
+							<!-- <li><a href="elements.html">Elements</a></li> -->
+						</ul>
+					</nav>
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Predicting Credit Degree Based on Random Forest Method of Spark</h1>
+							
+							<p>The fusion learning algorithm combines multiple machine learning algorithms to obtain a better model. Random forest is a commonly used fusion learning method in classification and regression problems. This algorithm builds multiple decision trees based on different subsets of training data and combines them into a new model. The prediction result is a combination of all the output of the decision tree, which can reduce fluctuations and improve the accuracy of the prediction. For the random forest classification model, the prediction result of each tree is regarded as a vote. The category with the most votes is the predicted category.</p> 
+
+							
+							<br/>
+							<p>The final prediction data set in DataFrame format is as follows:</p>
+							<img src="images/1.png">
+							<br/>
+							<p>We consider optimizing the parameters of the random forest model from three aspects
+First, let the number of decision trees participating in the voting remain unchanged, take the depth of the decision tree as the independent variable, train random forest models of different depths, and compare the area AUC of the ROC curve of each model, you can find that the greater the tree depth value is , The higher the AUC, the better the trained model, but it will cost the model training and prolong the training time.</p>
+                             <img src="images/2.png">
+                             <p>Then, let the depth of the decision tree be a constant value of 3, that is, each tree has at most three layers, train a random forest model with different voting decision trees, and find that when the number of trees participating in the voting is between 20-24, the AUC curve The hinge is high, the trained random forest model is better</p>
+							<img src="images/3.png">
+							<p>Take the number of decision trees participating in voting as the abscissa, the depth of the model tree as the ordinate, and the gray value of the square color to represent AUC. Train 200 random forest models and make data cubes. The more trees there are, the deeper each tree, the higher the gray value of the square, the higher the AUC, and the better the random forest model.</p>
+							<img src="images/4.png">
+							
+							
+						</div>
+
+					</div>
+
+				<!-- Footer -->
+				<!--
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="field half first">
+										<input type="text" name="name" id="name" placeholder="Name" />
+									</div>
+									<div class="field half">
+										<input type="email" name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="field">
+										<textarea name="message" id="message" placeholder="Message"></textarea>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="special" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+									<li><a href="#" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="#" class="icon style2 fa-500px"><span class="label">500px</span></a></li>
+									<li><a href="#" class="icon style2 fa-phone"><span class="label">Phone</span></a></li>
+									<li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+				-->
+					<footer>
+						<div class="inner">
+							
+							<ul class="copyright">
+								<li>&copy; chuyang gao. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+
+					</footer
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
